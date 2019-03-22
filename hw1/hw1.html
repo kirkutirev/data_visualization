@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Intro to DataVis - Homework 1</title>
+<style>
+	h1 {
+	  font: 24px sans-serif;
+	}
+	.bar {
+	  fill: #ffc300;
+	}
+	.bar:hover {
+	  fill: #581845;
+	}
+	.axis {
+	  font: 10px sans-serif;
+	}
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+
+	.x.axis path {
+	  display: none;
+	}
+</style>
 </head>
 
 <body>
@@ -11,38 +36,6 @@ lastname: Kutyrev<br/>
 e-mail: kutirev-k@mail.ru<br/>
 uID: 182509<br/>
 </p>
-</body>
-
-<style>
-h1 {
-  font: 24px sans-serif;
-}
-
-
-.bar {
-  fill: #ffc300;
-}
-
-.bar:hover {
-  fill: #581845;
-}
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-</style>
-
 <h2>Bar chart for y</h2>
 <svg width="600" height="230">
 	<g transform="translate(10,0)">
@@ -164,5 +157,5 @@ h1 {
 		650, 437
 		700, 405"/>
 </svg>
-
+</body>
 </html>
